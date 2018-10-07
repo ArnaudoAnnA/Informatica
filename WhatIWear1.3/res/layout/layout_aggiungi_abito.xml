@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="1"
+              android:layout_marginTop="20dp"
+              android:backgroundTint="@android:color/white"
+>
+
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.98">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Space
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+            />
+            <ImageButton
+                    android:layout_width="120dp"
+                    android:layout_height="175dp"
+                    android:id="@+id/imgbtt_fotoAbito" android:layout_column="0"
+                    android:layout_margin="2dp"
+                    android:layout_gravity="center_horizontal"/>
+            <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/icon_directory"
+                    android:id="@+id/imgbtt_explore"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="bottom"/>
+        </LinearLayout>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginLeft="15dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/txt_stile"
+                    android:id="@+id/txt_stile" android:layout_column="0" android:layout_margin="5dp"
+                    android:layout_marginLeft="10dp" android:textSize="17dp" android:textAlignment="gravity"/>
+            <ListView
+                    android:layout_width="120dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/listv_style"
+                    android:layout_column="1" android:layout_margin="5dp"
+            />
+
+        </TableRow>
+        <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+        >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/txt_categoria"
+                    android:id="@+id/txt_categoria" android:layout_column="0" android:layout_margin="2dp"
+                    android:layout_marginLeft="10dp" android:textSize="17dp" android:textAlignment="gravity"/>
+            <Spinner
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spin_categoria1" android:layout_column="1"/>
+            <Spinner
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spin_categoria2" android:layout_column="1"/>
+
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginLeft="15dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/txt_clima"
+                    android:id="@+id/txt_clima" android:layout_column="0" android:layout_margin="2dp"
+                    android:layout_marginLeft="10dp" android:textSize="17dp" android:textAlignment="gravity"/>
+            <ListView
+                    android:layout_width="120dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/listv_climate" android:layout_column="1" android:layout_margin="2dp"
+            />
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginLeft="15dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/txt_gradimento"
+                    android:id="@+id/txt_gradimento" android:layout_column="0" android:textSize="17dp"
+                    android:layout_margin="2dp" android:textAlignment="gravity"
+                    android:minLines="2"/>
+            <Spinner android:layout_width="120dp" android:layout_height="wrap_content" android:id="@+id/spin_gradimento"
+                     android:layout_column="1" android:layout_margin="2dp"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+    >
+        <Space
+                android:layout_width="170dp"
+                android:layout_height="5dp"
+        />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btt_aggiungi"
+                android:id="@+id/btt_aggiungi"
+                android:layout_column="2"
+                android:layout_span="1"
+        />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btt_back"
+                android:id="@+id/btt_back"
+        />
+    </LinearLayout>
+</LinearLayout>

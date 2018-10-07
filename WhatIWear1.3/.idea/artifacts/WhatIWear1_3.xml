@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="apk" name="WhatIWear1.3">
+    <output-path>$PROJECT_DIR$/out/artifacts/WhatIWear1_3</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyAlias" value="Lib3rta'" />
+        <option name="keyPassword" value="TGliM3J0YSc=" />
+        <option name="keyStorePassword" value="TGliM3J0YSc=" />
+        <option name="keyStoreUrl" value="file://$PROJECT_DIR$/../keyStore/whatIWearkey.jks" />
+        <option name="proGuardCfgFiles">
+          <list>
+            <option value="file://%MODULE_SDK_HOME%/tools/proguard/proguard-android.txt" />
+          </list>
+        </option>
+        <option name="signingMode" value="RELEASE_SIGNED" />
+      </options>
+    </properties>
+    <root id="archive" name="WhatIWear1.3.apk">
+      <element id="android-final-package" facet="WhatIWear1.3/android/Android" />
+    </root>
+  </artifact>
+</component>

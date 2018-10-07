@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_margin="20px"
+>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="es002_parchi"
+    />
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spin_select" android:layout_weight="1"/>
+        <WebView android:layout_width="match_parent"
+                      android:layout_height="700px"
+                      android:name="android.webkit.WebViewFragment"
+                  android:id="@+id/frag_googleMaps"
+        />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="10px"
+                android:layout_margin="20px"
+                android:text="@string/btt_add"
+                android:id="@+id/btt_add" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
+

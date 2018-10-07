@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>ES. 3 parchi giochi</title>
+      
+        
+        <style type="text/css">
+            #showParkTable tr{
+                border:solid;
+            }
+            
+            #showParkTable td, th {
+                margin:5px;
+            }
+            
+        </style>
+        
+    </head>
+
+    <body>
+
+        <!-- form-->
+        <div id="addPark">
+            <table>
+                <tr>
+                    <td>Descrizione:  </td>
+                    <td><input type="text" id="txt_descrizione"/></td>
+                </tr>
+
+                <tr>
+                    <td>Latitudine:</td>
+                    <td><input type="text" id="txt_latitudine"/></td>
+                </tr>
+
+                <tr>
+                    <td>Longitudine:</td>
+                    <td><input type="text" id="txt_longitudine"/></td>
+                </tr>
+            </table>
+
+            <button id="sumbitAggiungi" onclick="addPark()" style="align:left">Aggiungi nuovo parco</button>
+            
+              <script type="text/javascript">
+                  
+                function addParkToTable(descrizione, latitudine, longitudine)
+                {
+                    document.getElementById("showParkTable").innerHTML = document.getElementById("showParkTable").innerHTML +
+                                                        "<tr>"+
+                                                            "<td>"+descrizione+"</td>"+
+                                                            "<td>"+latitudine+"</td>"+
+                                                            "<td>"+longitudine+"</td>"+
+                                                            "<td><a href=\"https://www.google.it/maps/@"+latitudine+","+longitudine+"z"+"> link</a></td>"+
+                                                        "</tr>"
+    
+                }
+                  
+                  
+                function addPark()
+                {
+                    var descrizione = document.getElementById("txt_descrizione").value;
+                    var latitudine = document.getElementById("txt_latitudine").value;
+                    var longitudine = document.getElementById("txt_longitudine").value;
+
+                    if(descrizione === "")
+                    {
+                        alert("Manca la descrizione del parco");
+                    }else if(latitudine === "")
+                    {
+                        alert("Manca la latidudine");
+                    }else if(longitudine == "")
+                    {
+                        alert("Manca la longitudine");
+                    }else
+                    {
+                        addParkToTable(descrizione, latitudine, longitudine);
+                    }
+                }
+
+                
+
+            </script>
+       </div>
+       <!--/form-->
+
+       <!--parks table-->
+        <div id="showPark">
+            <p>Elenco dei parchi caricati: </p>
+
+            <table id="showParkTable" style="border:solid; padding:5px;">
+                <tr>
+                    <th>Descrizione</th>
+                    <th>Latitudine</th>
+                    <th>Longitudine</th>
+                    <th>link</th>
+                </tr>
+            </table>
+        </div>
+    </body>

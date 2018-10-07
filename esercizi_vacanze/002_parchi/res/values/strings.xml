@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">parchi</string>
+    <string name="btt_add">Aggiungi nuovo parco...</string>
+    <string name="btt_currentPosition">Preleva posizione corrente</string>
+    <string name="btt_save">Salva parco giochi per bimbi</string>
+    <string name="txt_description">Descrizione:</string>
+    <string name="txt_latitude">Latitudine:</string>
+    <string name="txt_longitude">Longitudine:</string>
+    <string name="coordinateFormat">%.4f</string>
+
+    <!--key-->
+    <string name="key_newPark">key_newPark</string>
+    <string name="key_parkLongitude">key_parkLongitude</string>
+    <string name="key_parkLatitude">key_parkLatitude</string>
+    <string name="key_parkDescription">key_parkDescription</string>
+</resources>

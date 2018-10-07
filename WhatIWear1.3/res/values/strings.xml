@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--view-->
+    <string name="app_name">WhatIWear</string>
+    <string name="btt_aggiungi">Add</string>
+    <string name="btt_scegli">Discover your outfit</string>
+    <string name="btt_guardaroba">Wardrobe</string>
+    <string name="txt_stile">Style: </string>
+    <string name="txt_categoria">Category: </string>
+    <string name="txt_gradimento">How much \nyou like it? </string>
+    <string name="txt_clima">Climate: </string>
+    <string name="txt_internal_storage">Internal Storage</string>
+    <string name="txt_external_storage">External Storage</string>
+    <string name="chk_borsa">Bag</string>
+    <string name="chk_giacca">Jacket</string>
+    <string name="chk_cappello">Cap</string>
+    <string name="btt_again">again</string>
+    <string name="chk_newClothes">only new clothes</string>
+    <string name="chk_recetlyUsed">only recently used clothes</string>
+    <string name="btt_ok">Ok</string>
+    <string name="btt_back">Back</string>
+    
+
+    <!--KEY-->
+    <string name="key_selectedImageFile">key_selectedImageFile</string>
+    <string name="key_searchedStyle">key_searchedStyle</string>
+    <string name="key_searchedClimate">key_searchedClimate</string>
+    <string name="key_thereIsBag">key_thereIsBag</string>
+    <string name="key_thereIsJacket">key_thereIsJacket</string>
+    <string name="key_thereIsCap">key_thereIsCap</string>
+    <string name="key_onlyNewClothes">key_onlyNewClothes</string>
+    <string name="key_onlyRecentlyUsed">key_onlyRecentlyUsed</string>
+    <string name="key_selectedDress">key_selectedDress</string>
+
+    <!--COSTANTS-->
+    <string name="dresses_each_row_wardrobe">5</string>
+
+
+    <!--ARRAY-->
+    <string-array name="arr_stile">
+        <item>smart</item>
+        <item>casual</item>
+        <item>hipster</item>
+        <item>classic</item>
+    </string-array>
+
+    <string-array name="arr_categoria">     <!--!!!!IMPORTANT!!!!: if you want to modify this array, you have to change also the
+                                                method getArrayFromResString() in the activity ShowDress.java
+                                                P.S. this order is not casual: this is the order of the imageview in the layout_showDress-->
+        <item> </item>
+        <item>cap</item>
+        <item>bag</item>
+        <item>shirt</item>
+        <item>sweatshirt</item>
+        <item>trousers and body</item>
+        <item>jacket</item>
+
+    </string-array>
+
+    <string-array name="arr_bags">
+        <item>little backpack</item>
+        <item>little bag</item>
+        <item>big backpack</item>
+        <item>big bag</item>
+    </string-array>
+
+    <string-array name="arr_shirt">
+        <item>long sheeves</item>
+        <item>short sheeves</item>
+    </string-array>
+
+    <string-array name="arr_pants">
+        <item>long trousers</item>
+        <item>short trousers</item>
+    </string-array>
+
+    <string-array name="arr_clima">
+        <item>hot</item>
+        <item>cold</item>
+        <item>warm</item>
+        <item>freeze</item>
+        <item>rain</item>
+        <item>snow</item>
+    </string-array>
+
+    <string-array name="arr_gradimento">
+        <item>*</item>
+        <item>**</item>
+        <item>***</item>
+    </string-array>
+
+    <string-array name="arr_vuoto">
+
+    </string-array>
+
+</resources>
